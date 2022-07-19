@@ -40,8 +40,8 @@ export const AnimalForm = () => {
           name: animal.name,
           breed: animal.breed,
           locationId: locationId,
-          treatment: animal.treatment,
-          customerId: parseInt(localStorage.getItem("kennel_customer"))
+          status: animal.treatment,
+          customerId: 1
         })
           .then(() => navigate("/animals"))
       } else {
@@ -50,8 +50,8 @@ export const AnimalForm = () => {
           name: animal.name,
           breed: animal.breed,
           locationId: locationId,
-          treatment: animal.treatment,
-          customerId: parseInt(localStorage.getItem("kennel_customer"))
+          status: animal.treatment,
+          customerId: 1
         })
           .then(() => navigate("/animals"))
       }
